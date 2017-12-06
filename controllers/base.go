@@ -18,6 +18,7 @@ func (bs *BaseController) Init(ct *context.Context, controllerName, actionName s
 	bs.Init(ct, controllerName, actionName, app)
 }
 
-// check request
+// check request User authentication
 func (bs *BaseController) Prepare() {
+
 }

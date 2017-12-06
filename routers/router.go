@@ -14,11 +14,12 @@ import (
 )
 
 func init() {
-	beego.NewNamespace(controllers.ApiPrefix,
+	apiNs := beego.NewNamespace(controllers.ApiPrefix,
 		beego.NSNamespace("/volume",
 			beego.NSInclude(&volume.VolumeController{})),
 		beego.NSNamespace("/Volume/:volume/snapshot",
 			beego.NSInclude(&snapshot.SnapshotController{}),
 		),
 	)
+	beego.AddNamespace(apiNs)
 }
