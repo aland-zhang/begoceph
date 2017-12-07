@@ -1,0 +1,6 @@
+* begoceph
+  operate ceph by restapi
+
+* 安装依赖
+** centos
+   在 centos 上 安装依赖 ~yum install librados-devel~
